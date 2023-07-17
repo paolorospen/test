@@ -1,0 +1,87 @@
+.kv {
+  width: 100%;
+}
+.kv img {
+  width: 100%;
+}
+
+.intro {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.pickup {
+  display: flex;
+  justify-content: center;
+}
+.pickup__desc {
+  width: 50%;
+}
+.pickup__img--wrap {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+}
+.pickup__img--wrap img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.pickup__img--1 {
+  z-index: 2;
+}
+.pickup__img--2 {
+  z-index: 1;
+}
+.pickup__img--text {
+  display: flex;
+  gap: 20px;
+}
+.pickup__img--text .front {
+  color: blue;
+  cursor: pointer;
+}
+.pickup__img--text .back {
+  color: grey;
+  cursor: pointer;
+}
+.pickup__img.imgBack .pickup__img--1 {
+  z-index: 1;
+}
+.pickup__img.imgBack .pickup__img--2 {
+  z-index: 2;
+}
+.pickup__img.imgBack .pickup__img--text {
+  display: flex;
+  gap: 20px;
+}
+.pickup__img.imgBack .pickup__img--text .front {
+  color: grey;
+}
+.pickup__img.imgBack .pickup__img--text .back {
+  color: blue;
+}
+
+.worries {
+  text-align: center;
+}
+.worries__row {
+  display: flex;
+}
+.about {
+  text-align: center;
+}
+.about__row {
+  display: flex;
+}
+.about__single {
+  width: 50%;
+}
+.comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
